@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frutiger Aero Weather</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video id="bg-video" autoplay muted loop playsinline></video>
+  <audio id="bg-audio" loop></audio>
+
+  <div class="weather-container">
+    <h1 id="location">Loading...</h1>
+    <p id="description"></p>
+    <p id="temperature"></p>
+  </div>
+
+  <div class="datetime-container">
+    <p id="date"></p>
+    <p id="time"></p>
+  </div>
+
+ 
+<!--
+<select id="weather-select">
+  <option value="">Manual Override</option>
+  <option value="sun">☀️ Sunny</option>
+  <option value="cloudy">☁️ Cloudy</option>
+  <option value="rain">🌧️ Rain</option>
+  <option value="snow">❄️ Snow</option>
+  <option value="storm">⛈️ Storm</option>
+</select>
+-->
+
+  <div id="music-toast">
+    <span class="note">🎵</span> <span id="track-name">Now Playing: Music</span>
+  </div>
+
+  <div id="autoplay-warning">
+    <span>Note: if music doesn’t play tap anywhere on the website.</span>
+    <button id="why-button">Why does this happen?</button>
+  </div>
+
+<div id="motivation-box">
+  <p id="motivation-text">Loading inspiration...</p>
+</div>
+
+  <div id="autoplay-info">
+  <div class="info-box">
+    <p>
+      Sometimes the music doesn’t play. This is caused by the browser having autoplay disabled until an interaction with the website is made. There is nothing I can possibly do about this, but you should go into browser settings and allow autoplay in order to stop this from happening again.
+    </p>
+    <button id="close-info">Close</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+
+
+
+</body>
+</html>
